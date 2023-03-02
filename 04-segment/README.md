@@ -31,12 +31,10 @@
 -- Turn LED(4) on if input value is equal to 0, ie "0000"
 LED(4) <= '1' when (SW="0000") else '0';
 
+-- Turn LED(5) on if input value is greater than "1001", ie 10, 11, 12, ...
 
-    with sel_i select
-    f_o <= a_i when "00",
-           b_i when "01",
-           c_i when "10",
-           d_i when others;
+
+    
 
 end architecture Behavioral;
 ```
