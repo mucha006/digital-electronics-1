@@ -27,7 +27,7 @@
 
 ```vhdl
 -- Experiments on your own: LED(7:4) indicators
-architecture Behavioral of mux_3bit_4to1 is
+
 begin
 
     with sel_i select
