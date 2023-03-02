@@ -27,7 +27,9 @@
 
 ```vhdl
 -- Experiments on your own: LED(7:4) indicators
+
 -- Turn LED(4) on if input value is equal to 0, ie "0000"
+LED(4) <= '1' when (SW="0000") else '0';
 
 
     with sel_i select
