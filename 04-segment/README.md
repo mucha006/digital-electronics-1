@@ -26,6 +26,7 @@
 2. Listing of LEDs(7:4) part of VHDL architecture from source file `top.vhd`. Try to write logic functions as simple as possible. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
 ```vhdl
+-- Experiments on your own: LED(7:4) indicators
 architecture Behavioral of mux_3bit_4to1 is
 begin
 
