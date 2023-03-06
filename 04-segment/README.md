@@ -32,12 +32,7 @@
  LED(4) <= '1' when (SW="0000") else '0';
 
 -- Turn LED(5) on if input value is greater than "1001", ie 10, 11, 12, ...
- LED(5) <= '1' when (SW="1010") else
-           '1' when (SW="1011") else
-           '1' when (SW="1100") else
-           '1' when (SW="1101") else
-           '1' when (SW="1110") else 
-           '1' when (SW="1111") else '0';         
+ LED(5) <= '1' when (SW>"1001") else '0';    
  
  -- Turn LED(6) on if input value is odd, ie 1, 3, 5, ...
  LED(6) <= '1' when (SW="0001") else
