@@ -16,9 +16,9 @@ https://editor.codecogs.com/
    | **clk** | **d** | **q(n)** | **q(n+1)** | **Comments** |
    | :-: | :-: | :-: | :-: | :-- |
    | ![rising](https://github.com/tomas-fryza/digital-electronics-1/blob/master/labs/05-ffs/images/eq_uparrow.png) | 0 | 0 | 0 | `q(n+1)` has the same level as `d` |
-   | ![rising](https://github.com/tomas-fryza/digital-electronics-1/blob/master/labs/05-ffs/images/eq_uparrow.png) | 0 | 1 |  |  |
-   | ![rising](https://github.com/tomas-fryza/digital-electronics-1/blob/master/labs/05-ffs/images/eq_uparrow.png) | 1 |  |  |  |
-   | ![rising](https://github.com/tomas-fryza/digital-electronics-1/blob/master/labs/05-ffs/images/eq_uparrow.png) | 1 |  |  |  |
+   | ![rising](https://github.com/tomas-fryza/digital-electronics-1/blob/master/labs/05-ffs/images/eq_uparrow.png) | 0 | 1 | 0 |  |
+   | ![rising](https://github.com/tomas-fryza/digital-electronics-1/blob/master/labs/05-ffs/images/eq_uparrow.png) | 1 | 0 | 1 |  |
+   | ![rising](https://github.com/tomas-fryza/digital-electronics-1/blob/master/labs/05-ffs/images/eq_uparrow.png) | 1 | 1 | 1 |  |
 
    **JK-type FF**
    | **clk** | **j** | **k** | **q(n)** | **q(n+1)** | **Comments** |
