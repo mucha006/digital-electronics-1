@@ -19,22 +19,20 @@ begin
     p_jk_ff_rst : process(clk)
     begin
         if rising_edge(clk) then
+                
                 if (rst = '1') then
-                    sig_q <= '0';
-                    
+                    sig_q <= '0';                    
                 elsif (j = '0' and k = '0') then
-                    sig_q <= sig_q;
-                    
+                    sig_q <= sig_q;                    
                 elsif (j = '0' and k = '1') then
-                    sig_q <= '0';
-                    
+                    sig_q <= '0';                    
                 elsif (j = '1' and k = '0') then
-                    sig_q <= '1';
-                    
+                    sig_q <= '1';                    
                 else 
                     sig_q <= not sig_q;
                 end if;
-          end if;       
+                
+         end if;       
     end process p_jk_ff_rst;
 
     -- Output ports are permanently connected to local signal
