@@ -41,27 +41,40 @@ end project_1;
 architecture Behavioral of project_1 is
 
 begin
-
 process is
+		variable i : integer :=0; 
+        variable j : integer :=1;
     begin
         
-        if (sig_i(0)='1' and sig_i(1)='1')then
-            sig_o <=  '1';
-            wait for 3000 ms;
-
-        end if;
+        while (i < 10) loop
         
-        
- 
-     
+        	while (i < 10) loop
             
+        		if (sig_i(i)='1' and sig_i(j)='1')then
+          		   sig_o <=  '1';
+          		   wait for 3000 ms;
+          		   sig_o <=  '0';
+          		   wait for 1000 ms;
             
-        
-        
-        
-        wait;
+       			elsif (sig_i(i)='0' and sig_i(j)='1')then
+        		   sig_o <=  '1';
+         		   wait for 3000 ms;
+         		   sig_o <=  '0';
+        		   wait for 1000 ms;
+            
+       			else
+       			   sig_o <=  '0';     
+                   
+    	     	end if;
+                
+                i := i+2;
+        		j := j+2;
+                
+            end loop;
+            
+        end loop;                 
          
-    end process;
+end process;
 
 
 
